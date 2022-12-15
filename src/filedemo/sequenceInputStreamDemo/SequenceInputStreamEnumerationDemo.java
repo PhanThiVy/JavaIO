@@ -1,4 +1,4 @@
-package filedemo.SequenceInputStream;
+package filedemo.sequenceInputStreamDemo;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
