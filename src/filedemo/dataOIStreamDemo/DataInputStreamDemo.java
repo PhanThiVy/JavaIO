@@ -19,14 +19,15 @@ public class DataInputStreamDemo {
     public static void main(String[] args) throws IOException {
         InputStream input = new FileInputStream("C:\\Users\\phanthivy\\Documents\\NetBeansProjects\\FileDemo\\src\\ListFile\\File1.txt");
         DataInputStream inst = new DataInputStream(input);
-//        int i ;
-//        while ((i=inst.read())!=-1) {            
-//            System.out.println((char)i);
+//        char i ;
+//        while ((i=inst.readChar())!=-1) {            
+//            System.out.println(i);
 //        }
         int count = input.available();
         System.out.println(count);
         byte[] ary = new byte[count];
-        inst.read(ary);
+        inst.readChar();
+        System.out.println();
         for (byte bt : ary) {
             char k = (char) bt;
             System.out.print(k + "-");

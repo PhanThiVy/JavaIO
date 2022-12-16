@@ -17,7 +17,7 @@ public class DataOutputStreamDemo {
       public static void main(String[] args) throws IOException {  
         FileOutputStream file = new FileOutputStream("C:\\Users\\phanthivy\\Documents\\NetBeansProjects\\FileDemo\\src\\ListFile\\File1.txt");  
         DataOutputStream data = new DataOutputStream(file);  
-        data.write(65);  
+        data.writeChar(64);  
         data.flush();  
         data.close();  
         System.out.println("Succcess...");  
